@@ -27,7 +27,7 @@ namespace CoffeMakerVM
         public List<(string className, string name, string descriptor)> InstanceFields { get; private set; }
         public Dictionary<(string name, string descriptor), MethodInfo> InstanceMethods { get; private set; }
         public Dictionary<(string className, string name, string descriptor), FieldData> StaticFields { get; private set; }
-        private readonly string BaseClassPath = $@"{Environment.CurrentDirectory.Split("Java Virtual Machine")[0]}Java Virtual Machine\JavaByteCode\build\classes\java\main";
+        private readonly string BaseClassPath = $@"{Environment.CurrentDirectory.Split("CoffeeMakerVM")[0]}CoffeeMakerVM\JavaByteCode\build\classes\java\main";
 
         public JavaClassFile(string filePath)
         {
